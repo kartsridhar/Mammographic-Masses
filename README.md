@@ -1,5 +1,5 @@
 # Mammographic-Masses
-A case study of comparing accuracies of different supervised classification algorithms for the Mammographic masses dataset provided by [UC, Irvine](https://archive.ics.uci.edu/ml/datasets/Mammographic+Mass). 
+A case study of comparing accuracies of different supervised classification algorithms for the Mammographic masses [dataset](https://archive.ics.uci.edu/ml/datasets/Mammographic+Mass) provided by [UC, Irvine](https://uci.edu/). 
 
 ## Problem
 Mammography is the most effective method for breast cancer screening available today. However, the low positive predictive value of breast biopsy resulting from mammogram interpretation leads to approximately 70% unnecessary biopsies with benign outcomes. To reduce the high number of unnecessary breast biopsies, several computer-aided diagnosis (CAD) systems have been proposed in the last years. These systems help physicians in their decision to perform a breast biopsy on a suspicious lesion seen in a mammogram or to perform a short term follow-up examination instead.
@@ -29,7 +29,7 @@ After running various classifiers, the accuracies are as follows:
 * K Nearest Neighbours - 79.40% (for k = 7) tested upto k = 30
 * Naive Bayes - 78.44%
 * Logistic Regression - 80.73%
-* Neural Network (Keras) - 80.21%
+* Artificial Neural Network (Keras) - 80.21% (for 10 epochs)
 
 Clearly, all except decision tree have an average accuracy in the range of 79-80%
 
