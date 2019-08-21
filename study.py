@@ -87,6 +87,7 @@ def create_model():
     return model
 model_estimator = KerasClassifier(build_fn=create_model, epochs=10, verbose=0)
 neural_network = cross_val_score(model_estimator, scaled_features, classes, cv=10)
+neural_network_score = neural_network.mean() * 100
 
 print("CLASSIFICATION ACCURACY RESULTS:")
 print(f'Decision Trees = {decision_tree_score} %')
@@ -97,5 +98,5 @@ print(f'SVM rbf kernel = {svc_rbf_score} %')
 print(f'KNN = {knn_score} % for k = {k}')
 print(f'Naive Bayes = {nb_score} %')
 print(f'Logistic Regression = {log_reg_score} %')
-print(f'Neural Network = {neural_network} %')
+print(f'Neural Network = {neural_network_score} %')
 
